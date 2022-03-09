@@ -84,23 +84,22 @@ const getAllBooksHandler = (request, h) => {
         }).code(200);
     }
 
-    const filteredByNameBooks = books.filter(
+    const filteredBooks = books
+    .filter(
         (book) => {
             if (name) {
                 return book.name.toLowerCase().includes(name.toLowerCase());
             }
             return book;
         },
-    );
-    const filteredByReadingBooks = filteredByNameBooks.filter(
+    ).filter(
         (book) => {
             if (reading && (reading === '0' || reading === '1')) {
                 return reading === '0' ? book.reading === false : book.reading === true;
             }
             return book;
         },
-    );
-    const filteredByFinishedBooks = filteredByReadingBooks.filter(
+    ).filter(
         (book) => {
             if (finished && (finished === '0' || finished === '1')) {
                 return finished === '0' ? book.finished === false : book.finished === true;
@@ -108,7 +107,7 @@ const getAllBooksHandler = (request, h) => {
             return book;
         },
     );
-    const mappedBooks = filteredByFinishedBooks.map(
+    const mappedBooks = filteredBooks.map(
         (book) => ({
             id: book.id,
             name: book.name,
@@ -127,20 +126,20 @@ const getBookByIdHandler = (request, h) => {
     const { bookId } = request.params;
 
     const foundBook = books.find((book) => book.id === bookId);
-    if (!foundBook) {
+    if (foundBook) {
         const resp = h.response({
-            status: 'fail',
-            message: 'Buku tidak ditemukan',
+            status: 'success',
+            data: {
+                book: foundBook,
+            },
         });
-        return resp.code(404);
+        return resp.code(200);
     }
     const resp = h.response({
-        status: 'success',
-        data: {
-            book: foundBook,
-        },
+        status: 'fail',
+        message: 'Buku tidak ditemukan',
     });
-    return resp.code(200);
+    return resp.code(404);
 };
 
 const editBookByIdHandler = (request, h) => {
