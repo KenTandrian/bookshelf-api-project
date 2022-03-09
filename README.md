@@ -7,7 +7,7 @@
 
 ## Introduction
 A RESTful API built with Hapi for CRUD operation.\
-This is a back-end project for the capstone project of Dicoding Indonesia: Front-end Web Development learning path, which is included in the Bangkit Academy 2022 program.
+This is a back-end project for the capstone project of Dicoding Indonesia: Back-end Web Development learning path, which is included in the Bangkit Academy 2022 program.
 
 ## Technologies
 [![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logo=javascript)](https://github.com/KenTandrian?tab=repositories&language=javascript)
