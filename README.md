@@ -1,7 +1,7 @@
 # Bookshelf API
 [![issues](https://img.shields.io/github/issues/KenTandrian/bookshelf-api-project)](https://github.com/KenTandrian/bookshelf-api-project/issues)
-[![language](https://img.shields.io/github/languages/count/KenTandrian/bookshelf-api-project)](https://github.com/KenTandrian/bookshelf-api-project/search?l=css)
-[![top-language](https://img.shields.io/github/languages/top/KenTandrian/bookshelf-api-project)](https://github.com/KenTandrian/bookshelf-api-project/search?l=css)
+[![language](https://img.shields.io/github/languages/count/KenTandrian/bookshelf-api-project)](https://github.com/KenTandrian/bookshelf-api-project/search?l=javascript)
+[![top-language](https://img.shields.io/github/languages/top/KenTandrian/bookshelf-api-project)](https://github.com/KenTandrian/bookshelf-api-project/search?l=javascript)
 [![commit](https://img.shields.io/github/commit-activity/m/KenTandrian/bookshelf-api-project)](https://github.com/KenTandrian/bookshelf-api-project/commits/main)
 [![last-commit](https://img.shields.io/github/last-commit/KenTandrian/bookshelf-api-project)](https://github.com/KenTandrian/bookshelf-api-project/commits/main)
 
