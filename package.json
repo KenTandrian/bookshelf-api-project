@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-api-project",
-  "version": "0.1.39",
+  "version": "0.1.47",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,6 @@
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.21"
   }
 }
